@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyptian Nights - ليالي مصرية للطبخ</title>
+    <style>
+        /* CSS styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .slogan {
+            font-style: italic;
+        }
+        
+        nav {
+            background-color: #A52A2A;
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #8B0000;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .main-content {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .sidebar {
+            flex: 28%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .recipe-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .recipe-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .recipe-title {
+            color: #8B0000;
+            margin: 10px 0;
+        }
+        
+        .login-form input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .login-form button {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .chat-box {
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+        
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        
+        .chat-input {
+            display: flex;
+        }
+        
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+        }
+        
+        .chat-input button {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .main-content, .sidebar {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Egyptian Nights</div>
+        <div class="slogan">اكتشف سحر المطبخ المصري معنا</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="recipes.html">وصفاتنا</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main class="main-content">
+            <h1>أهلاً بكم في Egyptian Nights</h1>
+            <p>موقعنا متخصص في تقديم أفضل وصفات المطبخ المصري والعربي، حيث يمكنك تعلم الطبخ ومشاركة تجاربك مع الآخرين.</p>
+            
+            <h2>أحدث الوصفات</h2>
+            
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/800x400?text=Koshary" alt="كشري مصري">
+                <h3 class="recipe-title">كشري مصري</h3>
+                <p>الطبق الوطني المصري الذي يجمع بين الأرز والمعكرونة والعدس والصلصة الحارة والبصل المقلي.</p>
+                <a href="koshary.html">اقرأ الوصفة كاملة</a>
+            </div>
+            
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/800x400?text=Ful+Medames" alt="فول مدمس">
+                <h3 class="recipe-title">فول مدمس</h3>
+                <p>وجبة الفطور المصرية التقليدية، غنية بالبروتين والطاقة.</p>
+                <a href="ful.html">اقرأ الوصفة كاملة</a>
+            </div>
+        </main>
+        
+        <aside class="sidebar">
+            <div class="login-form">
+                <h3>تسجيل الدخول / تسجيل جديد</h3>
+                <input type="text" placeholder="اسم المستخدم">
+                <input type="password" placeholder="كلمة المرور">
+                <button>تسجيل الدخول</button>
+                <p>ليس لديك حساب؟ <a href="register.html">سجل الآن</a></p>
+            </div>
+            
+            <div class="chat-section">
+                <h3>دردشة الأعضاء</h3>
+                <div class="chat-box">
+                    <div class="chat-message">
+                        <strong>أحمد:</strong> جربت وصفة الكشري اليوم وكانت رائعة!
+                    </div>
+                    <div class="chat-message">
+                        <strong>منى:</strong> هل يمكن استبدال الصلصة الحارة بصلصة عادية؟
+                    </div>
+                    <div class="chat-message">
+                        <strong>خالد:</strong> نعم بالتأكيد، لكن ستفقد الطعم الأصلي بعض الشيء.
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="اكتب رسالتك...">
+                    <button>إرسال</button>
+                </div>
+            </div>
+            
+            <div class="newsletter">
+                <h3>النشرة البريدية</h3>
+                <p>اشترك ليصلك كل جديد من وصفات ونصائح طبخ</p>
+                <input type="email" placeholder="بريدك الإلكتروني">
+                <button>اشتراك</button>
+            </div>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Egyptian Nights - جميع الحقوق محفوظة</p>
+        <p>تابعنا على: <a href="#">فيسبوك</a> | <a href="#">تويتر</a> | <a href="#">إنستجرام</a></p>
+    </footer>
+</body>
+</html>
